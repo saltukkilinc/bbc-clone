@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MyWebFont";
+  src: 
+  url("src/assets/WOFF2/BBCReithSans_W_Rg.woff2") format("woff2"),
+  url("src/assets/WOFF2/BBCReithSansCd_W_Bd.woff2") format("woff2"),
+    url("src/assets/WOFF2/BBCReithSans_W_Bd.woff2") format("woff");
+}
+
+body {
+  font-family: "MyWebFont", Fallback, sans-serif;
+}
