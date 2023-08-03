@@ -6,6 +6,7 @@ import HamburgerIcon from "../../assets/icons/hamburgerIcon";
 import SearchIcon from "../../assets/icons/searchIcon";
 import SmallSeacrhIcon from "../../assets/icons/smallSeacrhIcon";
 import CloseIcon from "../../assets/icons/closeIcon";
+import { Link,  } from "react-router-dom";
 
 // css module use if it is necessarry
 import styles from "./header.module.css";
@@ -14,19 +15,23 @@ const NavItemShow = ({
   title,
   isShow,
   color,
+  href,
 }: {
   title: string;
   color: string;
   isShow?: string;
+  href?: string;
 }) => {
   return (
-    <li
-      className={`${
-        isShow && `hidden ${isShow}:block`
-      } hover:underline decoration-${color} underline-offset-[12px] py-4`}
-    >
-      {title}
-    </li>
+    <Link to={href as string}>
+      <li
+        className={`${
+          isShow && `hidden ${isShow}:block`
+        } hover:underline decoration-${color} underline-offset-[12px] py-4`}
+      >
+        {title}
+      </li>
+    </Link>
   );
 };
 
@@ -34,25 +39,29 @@ const NavItemHidden = ({
   title,
   isHidden,
   color,
+  href,
 }: {
   title: string;
   color: string;
   isHidden?: string;
+  href?: string;
 }) => {
   return (
-    <li
-      className={`${
-        isHidden && `${isHidden}:hidden`
-      } hover:underline decoration-${color} underline-offset-[12px] py-4`}
-    >
-      {title}
-    </li>
+    <Link to={href as string}>
+      <li
+        className={`${
+          isHidden && `${isHidden}:hidden`
+        } hover:underline decoration-${color} underline-offset-[12px] py-4`}
+      >
+        {title}
+      </li>
+    </Link>
   );
 };
 
 const navList = [
-  { title: "Home", color: "white" },
-  { title: "News", color: "green-300" },
+  { title: "Home", color: "white", href:"/"},
+  { title: "News", color: "green-300", href:"/news" },
   { title: "Sports", color: "yellow-400" },
   { title: "Reel", color: "red-500" },
   { title: "Worklife", color: "blue-400" },
@@ -66,6 +75,8 @@ const navList = [
 
 const Header = () => {
   const [expandNavbar, setExpandNavbar] = useState<boolean>(true);
+
+
 
   return (
     <header className="px-4 bg-[#000] flex flex-col  text-white">
@@ -82,8 +93,8 @@ const Header = () => {
           </a>
 
           <ul className="hidden sm:flex flex-1 justify-around text-white">
-            <NavItemShow title="Home" color="white" />
-            <NavItemShow title="News" color="blue-700" />
+            <NavItemShow title="Home" color="white" href="/" />
+            <NavItemShow title="News" color="blue-700" href="/news" />
             <NavItemShow title="Sports" color="green-400" />
             <NavItemShow title="Reel" color="red-600" isShow="cs1" />
             <NavItemShow title="Worklife" color="orange-400" isShow="cs2" />
@@ -126,6 +137,7 @@ const Header = () => {
                       title={nav.title}
                       color={nav.color}
                       key={nav.title}
+                      href={nav.href || '/'}
                     />
                   ))}
                 </ul>
