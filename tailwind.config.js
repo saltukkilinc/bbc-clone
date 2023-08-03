@@ -18,7 +18,12 @@ export default {
         'cs5': "1008px",
         'cs6': "1280px",
       },
+      boxShadow: {
+        'img': 'rgba(0, 0, 0, 0.5) 0px -50px 80px 0px inset',
+      }
     },
   },
   plugins: [],
 };
+
+

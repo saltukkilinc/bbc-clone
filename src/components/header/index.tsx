@@ -6,7 +6,7 @@ import HamburgerIcon from "../../assets/icons/hamburgerIcon";
 import SearchIcon from "../../assets/icons/searchIcon";
 import SmallSeacrhIcon from "../../assets/icons/smallSeacrhIcon";
 import CloseIcon from "../../assets/icons/closeIcon";
-import { Link,  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // css module use if it is necessarry
 import styles from "./header.module.css";
