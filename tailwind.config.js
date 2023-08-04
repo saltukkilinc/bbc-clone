@@ -19,7 +19,15 @@ export default {
         'cs6': "1280px",
       },
       boxShadow: {
-        'img': 'rgba(0, 0, 0, 0.5) 0px -50px 80px 0px inset',
+        'img': 'inset 0px -100px 80px 0px rgba(0,0,0,0.75)',
+      },
+      colors: {
+        bbcBlue: "#47a1d8",
+        bbcGreen: "#589e50",
+        bbcPurple: "#362e67",
+        bbcRed: "#ff0000",
+        bbcYellow: "#ffff00",
+        bbcPink: "#ff00ff",
       }
     },
   },

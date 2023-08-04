@@ -2,6 +2,9 @@ import React from "react";
 import Header from "../../components/header";
 import { Link } from "react-router-dom";
 
+import { Section1_DUMMY } from "../../data";
+import Section1Item from "./section1";
+
 const Home = () => {
   return (
     <main>
@@ -13,9 +16,8 @@ const Home = () => {
         </h2>
 
         <article className="px-4 pt-4">
-          <ul className="flex flex-col gap-3">
-            
-            <li>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <li className="sm:col-start-1 sm:col-span-2">
               <Link to="/news">
                 <div className="relative">
                   <img
@@ -47,20 +49,15 @@ const Home = () => {
               </Link>
             </li>
 
-            <li className="border-b pb-3">
-              <h3>
-                <Link to="/news" className="text-[16px] font-bold leading-[19px] w-full block">
-                  All eyes on Georgia for another potential Trump case
-                </Link>
-              </h3>
-              <Link
-                to="/news"
-                className="text-[#767676] text-[12px] leading-[12px] border-l-4 border-l-blue-600 pl-2 mt-2 w-full block"
-              >
-                US
-              </Link>
-            </li>
-
+            {Section1_DUMMY.map((item) => (
+              <Section1Item
+                title={item.title}
+                topic={item.topic}
+                bLColor={item.bLColor}
+                key={item.title}
+                src={item.src}
+              />
+            ))}
           </ul>
         </article>
       </section>
