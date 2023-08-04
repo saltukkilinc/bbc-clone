@@ -96,3 +96,31 @@ export const WOMAN_WORLD_CUP_DUMMY = [
     src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/BE0E/production/_130645684_boat.jpg",
   },
 ];
+
+export const DUMMY_WEATHERS = [
+  {
+    day: "Fri",
+    topTemp: "20°C",
+    lowTemp: "13°C",
+    src: "https://static.bbci.co.uk/weather/0.5.284/images/icons/individual_56_icons/en_on_light_bg/29.gif",
+  },
+
+  {
+    day: "Fri",
+    topTemp: "20°C",
+    lowTemp: "13°C",
+    src: "https://static.bbci.co.uk/weather/0.5.284/images/icons/individual_56_icons/en_on_light_bg/29.gif",
+  },
+  {
+    day: "Fri",
+    topTemp: "20°C",
+    lowTemp: "13°C",
+    src: "https://static.bbci.co.uk/weather/0.5.284/images/icons/individual_56_icons/en_on_light_bg/10.gif",
+  },
+  {
+    day: "Fri",
+    topTemp: "20°C",
+    lowTemp: "13°C",
+    src: "https://static.bbci.co.uk/weather/0.5.284/images/icons/individual_56_icons/en_on_light_bg/3.gif",
+  },
+];
