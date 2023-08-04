@@ -24,3 +24,27 @@ export const Section1_DUMMY = [
     src: "https://ichef.bbc.co.uk/wwhp/624/ibroadcast/images/live/p0/g2/z3/p0g2z3yq.jpg",
   },
 ];
+
+export const Section2_DUMMY = [
+  {
+    title: "Oceans break heat record, grim implications",
+    description:
+      "The oceans are a vital regulator for the climate and our weather but are rapidly up.",
+    topic: "Science & Environment",
+    src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5176/production/_130645802_69da5070-496a-4061-a1d0-c659accd7f88.jpg",
+  },
+  {
+    title: "Canada's Alberta drops bid for Commonwealth Games",
+    description:
+      "It comes weeks after the Australian state of Victoria pulled out of hosting the 2026 Games.",
+    topic: "US & Canada",
+    src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5176/production/_130645802_69da5070-496a-4061-a1d0-c659accd7f88.jpg",
+  },
+  {
+    title: "Sea drone attack reported on Russian Black Sea base",
+    description:
+      "Russia says it repelled a seaborne drone attack by Ukraine at Novorossiysk naval base.",
+    topic: "Europe",
+    src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/BE0E/production/_130645684_boat.jpg",
+  },
+];
