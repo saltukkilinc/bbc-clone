@@ -26,7 +26,7 @@ export default {
         bbcGreen: "#589e50",
         bbcPurple: "#362e67",
         bbcRed: "#ff0000",
-        bbcYellow: "#ffff00",
+        bbcYellow: "#ffd930;",
         bbcPink: "#ff00ff",
         heading: "#4a4a4a"
       }

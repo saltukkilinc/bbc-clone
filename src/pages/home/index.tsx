@@ -2,10 +2,12 @@ import React from "react";
 import Header from "../../components/header";
 import { Link } from "react-router-dom";
 
-import { Section1_DUMMY, Section2_DUMMY } from "../../data";
+import { Section1_DUMMY, NEWS_DUMMY, SPORT_DUMMY, WOMAN_WORLD_CUP_DUMMY } from "../../data";
 import Section1Item from "./section1";
 import Headline from "./headline";
-import SectionItem from "./sectionItem";
+
+import Section from "./section";
+import WeatherSection from "./weatherSection";
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
           <span className="text-[#4a4a4a]  font-bold">Welcome to BBC.com</span>
           <span className="text-[#8c8c8c] font-normal">Thursday, 3 August</span>
         </h2>
+
+        
 
         <section className="px-4 pt-4">
           <ul className="grid grid-cols-1 sm:grid-cols-2 cs5:grid-cols-4 cs5:grid-rows-2 gap-3">
@@ -33,23 +37,13 @@ const Home = () => {
           </ul>
         </section>
 
-        <section className="px-4 pt-4">
-          <Subtitle title="News" bgColor="border-l-bbcRed" />
+        <Section data={NEWS_DUMMY} title="NEWS" bColor="border-l-bbcRed"/>
+        <Section data={SPORT_DUMMY} title="SPORT" bColor="border-l-bbcYellow"/>
+        <Section data={WOMAN_WORLD_CUP_DUMMY} title="WOMAN WORLD CUP" bColor="border-l-bbcBlue"/>
 
-          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-            {Section2_DUMMY.map((item) => (
-              <SectionItem
-                key={item.title}
-                title={item.title}
-                topic={item.topic}
-                bLColor="border-l-bbcRed"
-                src={item.src}
-                description={item.description}
-              />
-            ))}
-          </ul>
-        </section>
+        <WeatherSection />
 
+  
         <h1 className="mt-32">BOŞLUK İÇİN</h1>
       </article>
     </main>
@@ -58,14 +52,4 @@ const Home = () => {
 
 export default Home;
 
-function Subtitle({ title, bgColor }: { title: string; bgColor: string }) {
-  return (
-    <h2
-      className={`mb-4 text-[24px] leading-6 font-bold border-l-4 ${bgColor}`}
-    >
-      <Link to="/news" className="w-full pl-2">
-        {title}
-      </Link>
-    </h2>
-  );
-}
+
