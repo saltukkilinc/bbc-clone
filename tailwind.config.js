@@ -29,7 +29,12 @@ export default {
         bbcYellow: "#ffd930;",
         bbcPink: "#ff00ff",
         heading: "#4a4a4a"
+      },
+      backgroundImage: {
+        videoSBg: "linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.3) 60%)",
+        
       }
+
     },
   },
   plugins: [],

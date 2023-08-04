@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 import { Section1_DUMMY, NEWS_DUMMY, SPORT_DUMMY, WOMAN_WORLD_CUP_DUMMY } from "../../data";
 import Section1Item from "./section1";
 import Headline from "./headline";
-
 import Section from "./section";
 import WeatherSection from "./weatherSection";
+import VideoSection from "./videoSection";
 
 const Home = () => {
   return (
@@ -42,7 +42,8 @@ const Home = () => {
         <Section data={WOMAN_WORLD_CUP_DUMMY} title="WOMAN WORLD CUP" bColor="border-l-bbcBlue"/>
 
         <WeatherSection />
-
+        
+        <VideoSection />
   
         <h1 className="mt-32">BOŞLUK İÇİN</h1>
       </article>
