@@ -17,6 +17,7 @@ import EditorFavourite from "./editorFavourite";
 import FirstSection from "./firstSection";
 import DoubleImageNews from "./doubleImageNews";
 import FeaturedVideo from "./featuredVideo";
+import NextIcon from "../../assets/icons/nextIcon";
 
 const Home = () => {
   return (
@@ -49,6 +50,7 @@ const Home = () => {
         <DoubleImageNews />
         
         <FeaturedVideo />
+        
 
         <h1 className="mt-32">BOŞLUK İÇİN</h1>
       </article>

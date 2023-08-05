@@ -9,7 +9,7 @@ const FeaturedVideo = () => {
   return (
     <section className="p-4">
       <Subtitle title="Featured Video" bgColor="border-l-bbcBlue" />
-      <div className="relative flex flex-col gap-3">
+      <div className="relative flex flex-col">
         <BigImageGroup
           title="Watch: Ukrainian sea drone Russian..."
           topic="EUROPE"

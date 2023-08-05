@@ -16,27 +16,27 @@ const ImageListItem = ({
   src,
 }: ImageListItemProps) => {
   return (
-    <li className="relative border-b pb-3 sm:border-none sm:p-0">
-      <PlayIcon className="w-6 h-6 bg-black absolute top-0.5 left-0"/>
+    <li className="relative border-b py-3 sm:border-none sm:p-0">
+      <PlayIcon className="w-6 h-6 bg-black absolute top-3 left-0 sm:hidden"/>
       <Link to="/news">
-        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-2 sm:p1">
           <img
             src={src}
             alt="small images"
-            className="hidden sm:block w-full"
+            className="hidden sm:block w-full h-full"
           />
-          <div className="text-black pl-8">
-            <h3 className="">
+          <div className="text-black pl-8 sm:p-2 sm:text-white">
+            <h3 className="container">
               <Link
                 to="/news"
-                className=" text-[16px] font-bold leading-[19px] w-full block"
+                className=" text-[16px] font-bold leading-[19px] w-full block multiline-ellipsis "
               >
                 {title}
               </Link>
             </h3>
             <Link
               to="/news"
-              className={`text-[#767676] text-[12px] leading-[12px] border-l-4 ${bLColor} pl-2 mt-2 w-full block `}
+              className={`text-[#767676] text-[12px] leading-[12px] border-l-2 ${bLColor} pl-2 mt-2 w-full block`}
             >
               {topic}
             </Link>
