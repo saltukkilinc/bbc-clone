@@ -2,11 +2,14 @@ import React from "react";
 import Header from "../../components/header";
 import { Link } from "react-router-dom";
 
+
 import {
   Section1_DUMMY,
   NEWS_DUMMY,
   SPORT_DUMMY,
   WOMAN_WORLD_CUP_DUMMY,
+  DUMMY_VSDATA1,
+  DUMMY_VSDATA2
 } from "../../data";
 import Section1Item from "./section1";
 import Headline from "./headline";
@@ -56,9 +59,11 @@ const Home = () => {
 
         <WeatherSection />
 
-        <VideoSection />
+        <VideoSection videoSectionData={DUMMY_VSDATA1}/>
 
         <EditorFavourite />
+
+        <VideoSection videoSectionData={DUMMY_VSDATA2}/>
 
         <h1 className="mt-32">BOŞLUK İÇİN</h1>
       </article>

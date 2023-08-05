@@ -124,3 +124,25 @@ export const DUMMY_WEATHERS = [
     src: "https://static.bbci.co.uk/weather/0.5.284/images/icons/individual_56_icons/en_on_light_bg/3.gif",
   },
 ];
+
+export const DUMMY_VSDATA1 = {
+  title: <h2 className="font-black text-[44px]">REEL</h2>,
+  subtitle: "The most amazing videos from the BBC",
+  buttonText: "Visit Reel",
+  titleList: [{src:"https://ychef.files.bbci.co.uk/656x369/p0g4l2hy.jpg", title: "46,000-year-old worms from Siberian permafrost come back to life"},
+  {src:"https://ychef.files.bbci.co.uk/656x369/p0g4l2hy.jpg", title: "46,000-year-old worms from Siberian permafrost come back to life"},
+  {src:"https://ychef.files.bbci.co.uk/656x369/p0g4l2hy.jpg", title: "46,000-year-old worms from Siberian permafrost come back to life"},
+  
+]
+}
+
+export const DUMMY_VSDATA2 = {
+  title: <h2 className="mb-2 px-2 py-1 border-[2px] border-[#2F8735] text-[22px] leading-[30px] font-bold text-white">Future Planet</h2>,
+  subtitle: "The most amazing videos from the BBC",
+  buttonText: "Visit Fure Planet",
+  titleList: [{src:"https://ychef.files.bbci.co.uk/656x369/p0g4l2hy.jpg", title: "46,000-year-old worms from Siberian permafrost come back to life"},
+  {src:"https://ychef.files.bbci.co.uk/656x369/p0g4l2hy.jpg", title: "46,000-year-old worms from Siberian permafrost come back to life"},
+  {src:"https://ychef.files.bbci.co.uk/656x369/p0g4l2hy.jpg", title: "46,000-year-old worms from Siberian permafrost come back to life"},
+  
+]
+}
