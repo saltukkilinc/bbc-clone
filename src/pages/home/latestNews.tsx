@@ -17,7 +17,7 @@ const LatestNews = () => {
       </div>
       <ul className='flex flex-col'>
           {news.map((item, index) => (
-            <NewsItem title={item} order={index + 1}/>
+            <NewsItem title={item} order={index + 1} key={item}/>
           ))}
 
         </ul>

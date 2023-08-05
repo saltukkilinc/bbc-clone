@@ -54,7 +54,7 @@ const WeatherItems = ({ data }: { data: WeatherItemtype[] }) => {
   return (
     <ul className="flex items-center gap-2">
       {data.map((item: any) => (
-        <li>
+        <li key={item.title}>
           <Link to="/news" className="flex gap-2 items-center">
             <img src={item.src} alt="weather image" />
             <div className="text-[#212121]">

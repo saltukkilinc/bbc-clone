@@ -150,18 +150,53 @@ export const DUMMY_VSDATA2 = {
 
 export const FEATURED_VIDEO_DUMMY = [
   {
-    title: "Oceans break heat record, grim implications",
+    title: "1Oceans break heat record, grim implications",
     topic: "Science & Environment",
     src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5176/production/_130645802_69da5070-496a-4061-a1d0-c659accd7f88.jpg",
   },
   {
-    title: "Canada's Alberta drops bid for Commonwealth Games",
+    title: "2Canada's Alberta drops bid for Commonwealth Games",
     topic: "Science & Environment",
     src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5176/production/_130645802_69da5070-496a-4061-a1d0-c659accd7f88.jpg",
   },
   {
-    title: "Sea drone attack reported on Russian Black Sea base",
+    title: "3Sea drone attack reported on Russian Black Sea base",
     topic: "Europe",
     src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/BE0E/production/_130645684_boat.jpg",
   },
+  {
+    title: "4Oceans break heat record, grim implications",
+    topic: "Science & Environment",
+    src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5176/production/_130645802_69da5070-496a-4061-a1d0-c659accd7f88.jpg",
+  },
+  {
+    title: "5Canada's Alberta drops bid for Commonwealth Games",
+    topic: "Science & Environment",
+    src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5176/production/_130645802_69da5070-496a-4061-a1d0-c659accd7f88.jpg",
+  },
+  {
+    title: "6Sea drone attack reported on Russian Black Sea base",
+    topic: "Europe",
+    src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/BE0E/production/_130645684_boat.jpg",
+  },
+];
+
+
+export const FEATURED_VIDEO_DUMMY_lATEST = [
+  {
+    title: "Latest_1Oceans break heat record, grim implications",
+    topic: "Science & Environment",
+    src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5176/production/_130645802_69da5070-496a-4061-a1d0-c659accd7f88.jpg",
+  },
+  {
+    title: "Latest_2Canada's Alberta drops bid for Commonwealth Games",
+    topic: "Science & Environment",
+    src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5176/production/_130645802_69da5070-496a-4061-a1d0-c659accd7f88.jpg",
+  },
+  {
+    title: "Latest_3Canada's Alberta drops bid for Commonwealth Games",
+    topic: "Science & Environment",
+    src: "https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5176/production/_130645802_69da5070-496a-4061-a1d0-c659accd7f88.jpg",
+  },
+  
 ];

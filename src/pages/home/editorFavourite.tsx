@@ -22,13 +22,14 @@ const EditorFavourite = () => {
           />
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 sm:gap-2 cs5:grid-cols-3">
-            {MERGED_DUMMY_DATA.map((item) => (
+            {MERGED_DUMMY_DATA.map((item, index) => (
               <SectionItem
                 title={item.title}
                 topic={item.topic}
                 bLColor={"border-l-bbcBlue"}
                 src={item.src}
                 description={item.description}
+                key={index}
               />
             ))}
           </ul>
