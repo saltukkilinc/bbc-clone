@@ -1,20 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import SectionItem from "../../components/home/sectionItem";
-import Subtitle from "../../components/home/subtitle";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import SectionItem from '../../components/home/sectionItem'
+import Subtitle from '../../components/home/subtitle'
 
 type DataItem = {
-  title: string;
-  topic: string;
-  src: string;
-  description: string;
-};
+  title: string
+  topic: string
+  src: string
+  description: string
+}
 
 type SectionType = {
-  data: DataItem[];
-  title: string;
-  bColor: string;
-};
+  data: DataItem[]
+  title: string
+  bColor: string
+}
 
 const Section = ({ data, title, bColor }: SectionType) => {
   return (
@@ -34,9 +34,7 @@ const Section = ({ data, title, bColor }: SectionType) => {
         ))}
       </ul>
     </section>
-  );
-};
+  )
+}
 
-
-
-export default Section;
+export default Section

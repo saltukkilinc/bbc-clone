@@ -1,9 +1,9 @@
-import React from "react";
-import PlayIcon from "../../assets/icons/play";
-import Subtitle from "../../components/home/subtitle";
+import React from 'react'
+import PlayIcon from '../../assets/icons/play'
+import Subtitle from '../../components/home/subtitle'
 
-import BigImageGroup from "../../components/home/featuredVideo.tsx/bigImage";
-import ImageList from "../../components/home/featuredVideo.tsx/imageList";
+import BigImageGroup from '../../components/home/featuredVideo.tsx/bigImage'
+import ImageList from '../../components/home/featuredVideo.tsx/imageList'
 
 const FeaturedVideo = () => {
   return (
@@ -19,7 +19,7 @@ const FeaturedVideo = () => {
         <ImageList />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default FeaturedVideo;
+export default FeaturedVideo

@@ -1,12 +1,12 @@
-import React from "react";
-import Headline from "../../components/home/headline";
-import ImageNewsItem from "../../components/home/imageNewsItem";
-import { Section1_DUMMY } from "../../data";
+import React from 'react'
+import Headline from '../../components/home/headline'
+import ImageNewsItem from '../../components/home/imageNewsItem'
+import { Section1_DUMMY } from '../../data'
 
 const FirstSection = () => {
   return (
     <section className="px-4 pt-4">
-      <ul className="grid grid-cols-1 sm:grid-cols-2 cs5:grid-cols-4 cs5:grid-rows-2 gap-3">
+      <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 cs5:grid-cols-4 cs5:grid-rows-2">
         <Headline
           title="North Korea confirms custody of US soldier"
           desc="Travis King dashed across the border to North Korea from the South in July."
@@ -25,7 +25,7 @@ const FirstSection = () => {
         ))}
       </ul>
     </section>
-  );
-};
+  )
+}
 
-export default FirstSection;
+export default FirstSection
