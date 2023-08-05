@@ -1,7 +1,7 @@
 import React from "react";
-import Subtitle from "./subtitle";
-import Headline from "./headline";
-import SectionItem from "./sectionItem";
+import Subtitle from "../../components/home/subtitle";
+import Headline from "../../components/home/headline";
+import SectionItem from "../../components/home/sectionItem";
 import { NEWS_DUMMY, SPORT_DUMMY } from "../../data";
 import LatestNews from "./latestNews";
 

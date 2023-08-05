@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SectionItem from "./sectionItem";
-import Subtitle from "./subtitle";
+import SectionItem from "../../components/home/sectionItem";
+import Subtitle from "../../components/home/subtitle";
 
 type DataItem = {
   title: string;

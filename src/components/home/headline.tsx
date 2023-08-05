@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 type HeadlineProps = {
   title: string;
-  desc: string;
+  desc?: string;
   topic: string;
   src: string;
 };

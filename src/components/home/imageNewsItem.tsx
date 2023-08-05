@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-type Section1ItemProps = {
+type ImageNewsItemProps = {
   title: string;
   topic: string;
   bLColor: string;
   src: string;
 };
 
-const Section1Item = ({ title, topic, bLColor, src }: Section1ItemProps) => {
+const ImageNewsItem = ({ title, topic, bLColor, src }: ImageNewsItemProps) => {
   return (
     <li className="border-b pb-3 sm:border-none sm:p-0">
       <Link to="/news">
@@ -36,4 +36,4 @@ const Section1Item = ({ title, topic, bLColor, src }: Section1ItemProps) => {
   );
 };
 
-export default Section1Item;
+export default ImageNewsItem;
