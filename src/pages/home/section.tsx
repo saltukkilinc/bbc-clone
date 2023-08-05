@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SectionItem from "./sectionItem";
+import Subtitle from "./subtitle";
 
 type DataItem = {
   title: string;
@@ -36,16 +37,6 @@ const Section = ({ data, title, bColor }: SectionType) => {
   );
 };
 
-function Subtitle({ title, bgColor }: { title: string; bgColor: string }) {
-  return (
-    <h2
-      className={`mb-4 text-[24px] leading-6 font-bold border-l-4 ${bgColor}`}
-    >
-      <Link to="/news" className="w-full pl-2">
-        {title}
-      </Link>
-    </h2>
-  );
-}
+
 
 export default Section;

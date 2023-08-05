@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Headline = () => {
+type HeadlineProps = {
+  title: string;
+  desc: string;
+  topic: string;
+  src: string;
+};
+
+const Headline = ({ title, desc, topic, src }: HeadlineProps) => {
   return (
     <li className="sm:col-start-1 sm:col-span-2 cs5:row-start-1 cs5:row-span-2">
       <Link to="/news">
         <div className="relative">
           <img
-            src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/5DD6/production/_130622042_capture.png"
+            src={src}
             alt="main image"
             className="w-full shadow-img"
           />
@@ -17,18 +24,17 @@ const Headline = () => {
                 to={"/news"}
                 className="text-2xl leading-7 font-bold w-full block"
               >
-                North Korea confirms custody of US soldier
+                {title}
               </Link>
             </h3>
             <p className="hidden sm:block mt-2 leading-[19.2px] text-[#d3d3d3;]">
-              Travis King dashed across the border to North Korea from the South
-              in July.
+              {desc}
             </p>
             <Link
               to="/news"
               className="text-[12px] leading-[12px] border-l-4 border-l-red-600 pl-2 mt-2 w-full block"
             >
-              ASIA
+              {topic}
             </Link>
           </div>
         </div>
