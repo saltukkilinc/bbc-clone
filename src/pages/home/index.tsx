@@ -18,6 +18,8 @@ import FirstSection from './firstSection'
 import DoubleImageNews from './doubleImageNews'
 import FeaturedVideo from './featuredVideo'
 import NextIcon from '../../assets/icons/nextIcon'
+import WorldService from './worldService'
+import MoreBBC from './moreBbc'
 
 const Home = () => {
   return (
@@ -50,6 +52,12 @@ const Home = () => {
         <DoubleImageNews />
 
         <FeaturedVideo />
+
+        <WorldService />
+
+        <MoreBBC />
+
+        
 
         <h1 className="mt-32">BOŞLUK İÇİN</h1>
       </article>
