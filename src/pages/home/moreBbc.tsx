@@ -12,8 +12,8 @@ const MoreBBC = () => {
     <section className="list-none p-4 sm:bg-[#f6f6f6]">
       <div className="mx-auto max-w-[1248px]">
         <Subtitle title="More Around BBC" bgColor="border-l-[#47a1d8]" />
-        <div className="flex flex-col gap-3 sm:flex-row ">
-          <div className="flex flex-col gap-3 w-2/3">
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <div className="flex flex-col gap-3 sm:w-2/3">
             <Headline
               title="Wannabe rapper guilty of $4.5bn Bitcoin laundering"
               desc="Heather Morgan and husband Ilya Lichtenstein plead guilty to money laundering and defrauding the US."
@@ -36,7 +36,7 @@ const MoreBBC = () => {
             </ul>
           </div>
 
-          <div className='w-1/3 cs5:-order-1'><LatestNews /></div>
+          <div className='sm:w-1/3 cs5:-order-1'><LatestNews isImage/></div>
         </div>
       </div>
     </section>
