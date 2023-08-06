@@ -7,6 +7,7 @@ type SectionItemProps = {
   bLColor: string;
   src: string;
   description?: string;
+  titlesOnImage?:boolean
 };
 
 const SectionItem = ({
@@ -15,17 +16,18 @@ const SectionItem = ({
   bLColor,
   src,
   description,
+  titlesOnImage
 }: SectionItemProps) => {
   return (
-    <li className="relative border-b pb-3 sm:border-none sm:p-0">
+    <li className="relative border-b pb-3 sm:border-none sm:p-0 sm:bg-white">
       <Link to="/news">
-        <div>
+        <div className="relative">
           <img
             src={src}
             alt="small images"
             className="hidden sm:block w-full"
           />
-          <div className="text-black ">
+          <div className={`${titlesOnImage ? "sm:absolute left-0 bottom-2 right-0 sm:text-white pl-2" : "text-black"} ml-2`}>
             <h3 className="sm:my-2">
               <Link
                 to="/news"
@@ -39,7 +41,7 @@ const SectionItem = ({
             </p>
             <Link
               to="/news"
-              className={`text-[#767676] text-[12px] leading-[12px] border-l-4 ${bLColor} pl-2 mt-2 w-full block sm:absolute bottom-0 sm:text-[14px] leading-[14px]`}
+              className={`${titlesOnImage ? "sm:text-white" : "text-[#767676]"} text-[12px] leading-[12px] border-l-4 ${bLColor} pl-2 pb-2 mt-2 w-full block sm:absolute bottom-0 sm:text-[14px] leading-[14px]`}
             >
               {topic}
             </Link>

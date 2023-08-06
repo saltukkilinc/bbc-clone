@@ -7,7 +7,8 @@ type HeadlineProps = {
   topic: string
   src: string
   titlesBottomOfImage?: boolean
-  isTopLeftIcon?:ReactNode
+  isTopLeftIcon?: ReactNode
+  isNotCover?: boolean
 }
 
 const Headline = ({
@@ -16,10 +17,17 @@ const Headline = ({
   topic,
   src,
   titlesBottomOfImage,
-  isTopLeftIcon
+  isTopLeftIcon,
+  isNotCover,
 }: HeadlineProps) => {
   return (
-    <div className="bg-white sm:col-span-2 sm:col-start-1 cs5:row-span-2 cs5:row-start-1">
+    <div
+      className={`bg-white ${
+        isNotCover
+          ? ''
+          : 'sm:col-span-2 sm:col-start-1 cs5:row-span-2 cs5:row-start-1'
+      }`}
+    >
       <Link to="/news">
         <div className="relative">
           <img src={src} alt="main image" className="w-full shadow-img" />
@@ -46,7 +54,9 @@ const Headline = ({
               {topic}
             </Link>
           </div>
-          {isTopLeftIcon && <button className='absolute left-0 top-0'>{isTopLeftIcon}</button>}
+          {isTopLeftIcon && (
+            <button className="absolute left-0 top-0">{isTopLeftIcon}</button>
+          )}
         </div>
       </Link>
     </div>
