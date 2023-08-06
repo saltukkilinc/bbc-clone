@@ -28,8 +28,8 @@ const VideoSection = ({
             {videoSectionData.subtitle}
           </p>
           <ul className="flex flex-col gap-3 sm:flex-row">
-            {videoSectionData.titleList.map((item) => (
-              <li>
+            {videoSectionData.titleList.map((item, index) => (
+              <li key={index}>
                 <img src={item.src} alt="siberian image" />
                 <div className="bg-white pb-4 pt-2">
                   <h3 className="px-2 text-[17px] font-bold leading-5">

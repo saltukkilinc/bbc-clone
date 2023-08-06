@@ -5,8 +5,8 @@ const news = [
   'US jobs market holds steady despite rate rises',
   'China drops Australia barley tariffs after three years',
   'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-  'China drops Australia barley tariffs after three years',
-  'China drops Australia barley tariffs after three years',
+  'China drops Australia barley tariffs after three years sd',
+  'China drops Australia barley tariffs after three years dsadsa',
 ]
 
 const LatestNews = () => {
