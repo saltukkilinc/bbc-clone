@@ -20,6 +20,7 @@ import FeaturedVideo from './featuredVideo'
 import NextIcon from '../../assets/icons/nextIcon'
 import WorldService from './worldService'
 import MoreBBC from './moreBbc'
+import SpecialFeatures from './specialFeatures'
 
 const Home = () => {
   return (
@@ -56,6 +57,8 @@ const Home = () => {
         <WorldService />
 
         <MoreBBC />
+
+        <SpecialFeatures />
 
         
 
