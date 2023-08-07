@@ -22,6 +22,8 @@ import WorldService from './worldService'
 import MoreBBC from './moreBbc'
 import SpecialFeatures from './specialFeatures'
 import WorldInPictures from './worldInPictures'
+import OtherLanguages from './otherLanguages'
+import Footer from './footer'
 
 const Home = () => {
   return (
@@ -63,9 +65,9 @@ const Home = () => {
 
         <WorldInPictures />
 
-        
+        <OtherLanguages />
 
-        <h1 className="mt-32">BOŞLUK İÇİN</h1>
+        <Footer />
       </article>
     </main>
   )
