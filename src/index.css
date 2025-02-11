@@ -2,3 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MyWebFont";
+  src: 
+  url("src/assets/WOFF2/BBCReithSans_W_Rg.woff2") format("woff2"),
+  url("src/assets/WOFF2/BBCReithSansCd_W_Bd.woff2") format("woff2"),
+    url("src/assets/WOFF2/BBCReithSans_W_Bd.woff2") format("woff");
+}
+
+body {
+  font-family: "MyWebFont", Fallback, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make ellipsis at the and of the last line */
+.container {
+  overflow: hidden;
+}
+.multiline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
