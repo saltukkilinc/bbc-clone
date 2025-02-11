@@ -1,27 +1,53 @@
-# React + TypeScript + Vite
+# BBC News Clone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a clone of the BBC News website, built using React 18, Tailwind CSS, and TypeScript. It aims to replicate the design of the BBC News website, providing users with a familiar and intuitive news browsing experience.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **React 18:** A JavaScript library for building user interfaces.
+*   **Tailwind CSS:** A utility-first CSS framework for rapidly styling custom designs.
+*   **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+*   **Responsive Design:** Adapts seamlessly to various screen sizes, ensuring a consistent user experience across devices.
+*   **Styling:** Replicates the BBC News website's visual style using Tailwind CSS classes.
 
-- Configure the top-level `parserOptions` property like this:
+## Preview
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+<img width="1423" alt="Screenshot 2025-02-11 at 17 10 36" src="https://github.com/user-attachments/assets/3fc7a6b9-0c25-4488-9113-4a227664b63c" />
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/saltukkilinc/bbc-clone.git
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd bbc-clone
+    ```
+3.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+1.  Start the development server:
+    ```bash
+    npm run dev
+    ```
+2.  Open your browser and navigate to `http://localhost:3000` to view the application.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any bug fixes, feature additions, or improvements.
+
+## License
+
+MIT License
+
+## Contact
+
+Saltuk Buğra Kılınç - sbk.karahan@gmail.com
